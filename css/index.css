@@ -14,6 +14,7 @@ a{
 }
 
 .galeria {
+    font-size: 20px;
     margin: 30px 0;
 }
 
@@ -31,11 +32,11 @@ a{
 }
 
 .imagen img {
-    width: 150px;
-    height: 100px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    box-shadow: 12px 11px 8px rgba(0,0,0,0.15);
 }
 
 .imagen p {
