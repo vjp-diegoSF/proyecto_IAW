@@ -3,30 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diego Santiago 2ºASIR - IAW</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-
     <header>
-        <h1>Ciudades</h1>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section class="bloque">
-            <h3>España</h3>
-            <p>España es conocida por su rica historia, cultura y ciudades vibrantes como Madrid, Barcelona y Sevilla.</p>
-            <img src="img/españa.png" alt="Bandera de España" class="bandera">
-        </section>
-        <section class="bloque">
-            <h3>Resto del mundo</h3>
-            <p>El mundo está lleno de ciudades impresionantes como Nueva York, París y Tokio, cada una con su propio encanto.</p>
-            <img src="img/mix_mundo.png" alt="Mix de banderas del mundo" class="bandera">
-            <div class="galeria">
-                <img src="img/nueva_york.jpg" alt="Nueva York">
-                <img src="img/paris.jpg" alt="París">
-                <img src="img/tokio.jpg" alt="Tokio">
+    <section id="servicios">
+        <div class="container"> 
+            <h2>Ciudades</h2>
+            <div class="servicios-grid">
+                <div class="servicio">
+                    <h3>España</h3>
+                    <p>Hablamos sobre para mi las ciudades grande de españa</p>
+                </div>
+                <div class="servicio">
+                    <h3>Resto Mundo</h3>
+                    <p>Hablamos sobre para mi las ciudades grande del mundo</p>
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form>
+                <input type="text" placeholder="Tu nombre" required>
+                <input type="email" placeholder="Tu correo" required>
+                <textarea placeholder="Tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
 </body>
 </html>

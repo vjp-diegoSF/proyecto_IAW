@@ -1,66 +1,95 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset básico */
+* {
     margin: 0;
-    background: #f5f5f5;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    background: #003366;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    justify-content: center;
-}
-
-header h1 {
-    text-align: center;
-    font-size: 2.2em;
-}
-
-.subtitulo {
-    text-align: center;
-    font-size: 1em;
-    color: #555;
-    margin: 30px 0 10px 0;
-}
-
-.bloque {
-    background: #fff;
-    margin: 30px auto;
-    padding: 20px;
-    max-width: 700px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
-.bloque h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #003366;
-}
-
-.bloque p {
-    font-size: 1em;
+/* Tipografía base */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     color: #333;
+    background-color: #f9f9f9;
 }
 
-.bandera {
-    display: block;
-    margin: 15px auto;
-    max-width: 80px;
+/* Contenedor central */
+.container {
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.galeria {
+/* Encabezado */
+header {
+    text-align: center;
+    align-items: center;
+    background-color: #004080;
+    color: white;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
     display: flex;
-    justify-content: center;
     gap: 15px;
-    margin-top: 15px;
 }
 
-.galeria img {
-    width: 120px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 6px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones */
+section {
+    padding: 60px 0;
+}
+
+/* Servicios */
+.servicios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.servicio {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #003366;
 }
