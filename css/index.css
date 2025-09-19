@@ -51,14 +51,14 @@ section {
     padding: 60px 0;
 }
 
-/* Servicios */
-.servicios-grid {
+/* Ciudades */
+.ciudades-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.servicio {
+.ciudades {
     flex: 1;
     background-color: white;
     padding: 20px;
